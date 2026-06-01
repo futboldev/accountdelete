@@ -1,117 +1,144 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Delete Account - Nexfutbol devs</title>
+<title>Account & Data Deletion Policy</title>
 
 <style>
-body {
-    margin: 0;
+body{
+    margin:0;
     font-family: Arial, sans-serif;
-    background: #0b1220;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background:#0b1220;
+    color:#e5e7eb;
+    line-height:1.6;
 }
 
-.container {
-    max-width: 700px;
-    background: #111a2e;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+.container{
+    max-width:800px;
+    margin:40px auto;
+    padding:25px;
+    background:#111827;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-h1 {
-    color: #4da3ff;
-    margin-bottom: 10px;
+h1{
+    color:#4da3ff;
+    font-size:28px;
 }
 
-p {
-    color: #cbd5e1;
-    line-height: 1.6;
+h2{
+    color:#93c5fd;
+    margin-top:25px;
 }
 
-.box {
-    background: #0f1b33;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
+a{
+    color:#60a5fa;
+    text-decoration:none;
 }
 
-button {
-    margin-top: 20px;
-    padding: 12px 20px;
-    background: #ff3b3b;
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
+a:hover{
+    text-decoration:underline;
 }
 
-button:hover {
-    background: #e62e2e;
-}
-
-.success {
-    display: none;
-    margin-top: 15px;
-    padding: 12px;
-    background: #16a34a;
-    border-radius: 8px;
+hr{
+    border:0;
+    border-top:1px solid #374151;
+    margin:20px 0;
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
-    <h1>Account Deletion Request</h1>
-    <p><strong>Nexfutbol devs</strong> respects your privacy. You can request deletion of your account and associated data at any time.</p>
 
-```
-<div class="box">
-    <p><strong>Developer Email:</strong> Nextfutbol8@gmail.com</p>
-    <p><strong>Apps:</strong> All Nexfutbol applications</p>
-</div>
+<h1>Account & Data Deletion Request</h1>
 
-<h3>What will be deleted:</h3>
+<h2>Nexfutbol devs – Data Deletion Policy</h2>
+
 <p>
-• User profile (email, name, UID)<br>
-• Login credentials (Google/Firebase account link)<br>
-• App usage data (if stored)<br>
-• Preferences and saved settings
+If you are a user of any Nexfutbol devs application, you have the right to request deletion of your account and associated data at any time.
 </p>
 
-<h3>How to request deletion:</h3>
+<hr>
+
+<h2>📌 How to Request Account Deletion</h2>
+
+<p><strong>Option 1: Email Request</strong></p>
+
 <p>
-Click the button below. You will be prompted to send an email request.
+Send an email to:<br>
+📧 <a href="mailto:Nextfutbol8@gmail.com">Nextfutbol8@gmail.com</a>
 </p>
 
-<button onclick="sendEmail()">Request Account Deletion</button>
+<p>
+Subject line:<br>
+<strong>Account Deletion Request</strong>
+</p>
 
-<div class="success" id="msg">
-    ✔ Email client opened. Please send your request to complete deletion.
+<p>Include the following information:</p>
+<ul>
+<li>Your app name (e.g. 2+ Odds Daily Tips)</li>
+<li>Your email used in the app (Google account email)</li>
+<li>Reason for deletion (optional)</li>
+</ul>
+
+<hr>
+
+<p><strong>Option 2: In-App Request (if available in future updates)</strong></p>
+
+<p>
+You may request account deletion directly from the app settings once this feature is enabled.
+</p>
+
+<hr>
+
+<h2>🗑 What Data Will Be Deleted</h2>
+
+<ul>
+<li>User profile information (name, email, UID)</li>
+<li>Login data (Google account authentication reference)</li>
+<li>App activity history (if stored)</li>
+<li>Preferences and saved settings</li>
+</ul>
+
+<hr>
+
+<h2>⏳ Data Retention</h2>
+
+<ul>
+<li>Most data is deleted within <strong>7–30 days</strong></li>
+<li>Some records may be retained for legal or security purposes where required</li>
+</ul>
+
+<hr>
+
+<h2>🔒 Important Notes</h2>
+
+<ul>
+<li>Deleting your account is permanent and cannot be undone</li>
+<li>Some anonymized data may remain for analytics purposes</li>
+<li>This process applies to all Nexfutbol devs applications</li>
+</ul>
+
+<hr>
+
+<h2>📩 Contact</h2>
+
+<p>
+📧 <a href="mailto:Nextfutbol8@gmail.com">Nextfutbol8@gmail.com</a><br>
+🏢 Nexfutbol devs
+</p>
+
+<hr>
+
+<p style="text-align:center;">
+© 2026 Nexfutbol devs. All rights reserved.
+</p>
+
 </div>
-```
-
-</div>
-
-<script>
-function sendEmail() {
-    window.location.href = "mailto:Nextfutbol8@gmail.com?subject=Account%20Deletion%20Request&body=Hello%20Nexfutbol%20Devs,%0A%0AI%20want%20to%20delete%20my%20account%20and%20all%20associated%20data.%0A%0AApp%20Name:%0ARegistered%20Email:%0A%0AThank%20you.";
-    
-    document.getElementById("msg").style.display = "block";
-}
-</script>
 
 </body>
 </html>
