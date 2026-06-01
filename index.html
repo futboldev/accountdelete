@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Account - Nexfutbol devs</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1220;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    background: #111a2e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+h1 {
+    color: #4da3ff;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.box {
+    background: #0f1b33;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #ff3b3b;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #e62e2e;
+}
+
+.success {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    background: #16a34a;
+    border-radius: 8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Account Deletion Request</h1>
+    <p><strong>Nexfutbol devs</strong> respects your privacy. You can request deletion of your account and associated data at any time.</p>
+
+```
+<div class="box">
+    <p><strong>Developer Email:</strong> Nextfutbol8@gmail.com</p>
+    <p><strong>Apps:</strong> All Nexfutbol applications</p>
+</div>
+
+<h3>What will be deleted:</h3>
+<p>
+• User profile (email, name, UID)<br>
+• Login credentials (Google/Firebase account link)<br>
+• App usage data (if stored)<br>
+• Preferences and saved settings
+</p>
+
+<h3>How to request deletion:</h3>
+<p>
+Click the button below. You will be prompted to send an email request.
+</p>
+
+<button onclick="sendEmail()">Request Account Deletion</button>
+
+<div class="success" id="msg">
+    ✔ Email client opened. Please send your request to complete deletion.
+</div>
+```
+
+</div>
+
+<script>
+function sendEmail() {
+    window.location.href = "mailto:Nextfutbol8@gmail.com?subject=Account%20Deletion%20Request&body=Hello%20Nexfutbol%20Devs,%0A%0AI%20want%20to%20delete%20my%20account%20and%20all%20associated%20data.%0A%0AApp%20Name:%0ARegistered%20Email:%0A%0AThank%20you.";
+    
+    document.getElementById("msg").style.display = "block";
+}
+</script>
+
+</body>
+</html>
